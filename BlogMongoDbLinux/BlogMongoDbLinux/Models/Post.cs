@@ -5,11 +5,10 @@ using MongoDB.Bson;
 using System.Web.Mvc;
 using System.Collections.Generic;
 using System.Text.RegularExpressions;
+using System.ComponentModel;
 
-namespace BlogMongoDbLinux
-{
-	public class Post
-	{
+namespace BlogMongoDbLinux.Models {
+	public class Post {
 		[ScaffoldColumn (false)]
 		[BsonId]
 		public ObjectId PostId { get; set; }
@@ -17,20 +16,20 @@ namespace BlogMongoDbLinux
 		[ScaffoldColumn (false)]
 		public DateTime Date { get; set; }
 
-		[Required]
+		[Required, DisplayName ("Título")]
 		public string Title { get; set; }
 
 		[ScaffoldColumn (false)]
 		public string Url { get; set; }
 
-		[Required]
+		[Required, DisplayName ("Resumo")]
 		public string Summary { get; set; }
 
 		[UIHint ("WYSIWYG")]
-		[AllowHtml]
+		[AllowHtml, DisplayName ("Texto")]
 		public string Details { get; set; }
 
-		[ScaffoldColumn (false)]
+		[DisplayName ("Autor")]
 		public string Author { get; set; }
 
 		[ScaffoldColumn (false)]

@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Text.RegularExpressions;
 
-namespace BlogMongoDbLinux
+namespace BlogMongoDbLinux.Helpers
 {
 	public class BlogHelper
 	{

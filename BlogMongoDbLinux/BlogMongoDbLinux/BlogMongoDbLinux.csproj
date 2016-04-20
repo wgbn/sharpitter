@@ -95,10 +95,10 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Models\Post.cs" />
-    <Compile Include="Scripts\PostService.cs" />
     <Compile Include="Helpers\MongoHelper.cs" />
     <Compile Include="Controllers\PostController.cs" />
     <Compile Include="Helpers\BlogHelper.cs" />
+    <Compile Include="Services\PostService.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Views\Web.config" />
@@ -110,6 +110,7 @@
     <Content Include="Global.asax" />
     <Content Include="packages.config" />
     <Content Include="Views\Post\Create.cshtml" />
+    <Content Include="Views\Post\Index.cshtml" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <ProjectExtensions>

@@ -1,14 +1,6 @@
-﻿<Properties StartupItem="BlogMongoDbLinux/BlogMongoDbLinux.csproj">
+﻿<Properties StartupItem="BlogMongoDbLinux/BlogMongoDbLinux.csproj" RefactoringSettings.EnableRefactorings="True">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="/usr/bin/google-chrome-stable" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="BlogMongoDbLinux/Views/Post/Create.cshtml">
-    <Files>
-      <File FileName="BlogMongoDbLinux/Models/Post.cs" Line="40" Column="49" />
-      <File FileName="BlogMongoDbLinux/Scripts/PostService.cs" Line="19" Column="32" />
-      <File FileName="BlogMongoDbLinux/Helpers/MongoHelper.cs" Line="16" Column="11" />
-      <File FileName="BlogMongoDbLinux/Controllers/PostController.cs" Line="35" Column="32" />
-      <File FileName="BlogMongoDbLinux/Views/Post/Create.cshtml" Line="1" Column="8" />
-    </Files>
-  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workbench />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
