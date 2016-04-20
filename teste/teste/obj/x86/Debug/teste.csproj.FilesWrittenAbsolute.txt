@@ -1,0 +1,5 @@
+/home/walter/workspace/dotnet/teste/teste/obj/x86/Debug/.NETFramework,Version=v4.5.AssemblyAttribute.cs
+/home/walter/workspace/dotnet/teste/teste/bin/Debug/teste.exe.mdb
+/home/walter/workspace/dotnet/teste/teste/bin/Debug/teste.exe
+/home/walter/workspace/dotnet/teste/teste/obj/x86/Debug/teste.exe
+/home/walter/workspace/dotnet/teste/teste/obj/x86/Debug/teste.exe.mdb

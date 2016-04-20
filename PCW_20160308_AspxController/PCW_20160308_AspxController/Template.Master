@@ -1,0 +1,62 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Template.master.cs" Inherits="PCW_20160308_AspxController.Template" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>WGBN</title>
+    <script src="https://code.jquery.com/jquery-1.12.1.min.js"></script>
+    <asp:ContentPlaceHolder ID="head" runat="server"></asp:ContentPlaceHolder>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+        .site {
+            display:flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: flex-start;
+            align-content: stretch;
+            align-items: stretch;
+            height: 100vh;
+        }
+        .site .principal {
+            flex-grow: 1;
+            padding: 1em;
+        }
+        .site .lateral {
+            width: 30%;
+            background-color: #ccc;
+            padding: .5em;
+        }
+        .botaoLateral {
+            display: inline-block;
+            padding: .4em .7em;
+            background-color: #fff;
+            border-radius: 4px;
+            color: #666;
+            margin: 0 .2em;
+            text-decoration: none;
+            box-shadow: 0 1px 2px rgba(0,0,0,.3);
+        }
+        .botaoLateral:hover {
+            background-color: darkblue;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div class="site">
+        <div class="principal">
+            <asp:ContentPlaceHolder ID="AreaPrincipal" runat="server"></asp:ContentPlaceHolder>
+        </div>
+
+        <div class="lateral">
+            <asp:ContentPlaceHolder ID="AreaLateral" runat="server"></asp:ContentPlaceHolder>
+        </div>
+    </div>
+    </form>
+</body>
+</html>

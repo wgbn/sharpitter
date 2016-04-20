@@ -1,0 +1,12 @@
+/media/walter/ARQUIVOS/workspace/dotnet/PCW_20160308_controller/PCW_20160308_controller/obj/Debug/.NETFramework,Version=v4.5.AssemblyAttribute.cs
+/media/walter/ARQUIVOS/workspace/dotnet/PCW_20160308_controller/PCW_20160308_controller/bin/PCW_20160308_controller.dll.mdb
+/media/walter/ARQUIVOS/workspace/dotnet/PCW_20160308_controller/PCW_20160308_controller/bin/PCW_20160308_controller.dll
+/media/walter/ARQUIVOS/workspace/dotnet/PCW_20160308_controller/PCW_20160308_controller/obj/Debug/PCW_20160308_controller.dll
+/media/walter/ARQUIVOS/workspace/dotnet/PCW_20160308_controller/PCW_20160308_controller/obj/Debug/PCW_20160308_controller.dll.mdb
+/media/walter/ARQUIVOS/workspace/dotnet/PCW_20160308_controller/PCW_20160308_controller/bin/Microsoft.Web.Infrastructure.dll
+/media/walter/ARQUIVOS/workspace/dotnet/PCW_20160308_controller/PCW_20160308_controller/bin/System.Web.Razor.dll
+/media/walter/ARQUIVOS/workspace/dotnet/PCW_20160308_controller/PCW_20160308_controller/bin/System.Web.Helpers.dll
+/media/walter/ARQUIVOS/workspace/dotnet/PCW_20160308_controller/PCW_20160308_controller/bin/System.Web.WebPages.dll
+/media/walter/ARQUIVOS/workspace/dotnet/PCW_20160308_controller/PCW_20160308_controller/bin/System.Web.WebPages.Deployment.dll
+/media/walter/ARQUIVOS/workspace/dotnet/PCW_20160308_controller/PCW_20160308_controller/bin/System.Web.WebPages.Razor.dll
+/media/walter/ARQUIVOS/workspace/dotnet/PCW_20160308_controller/PCW_20160308_controller/bin/System.Web.Mvc.dll

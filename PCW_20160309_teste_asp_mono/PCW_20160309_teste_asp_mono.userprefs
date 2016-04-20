@@ -1,0 +1,13 @@
+﻿<Properties StartupItem="PCW_20160309_teste_asp_mono/PCW_20160309_teste_asp_mono.csproj">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="chromium-browser" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="PCW_20160309_teste_asp_mono/Views/Home/Index.cshtml">
+    <Files>
+      <File FileName="PCW_20160309_teste_asp_mono/Controllers/HomeController.cs" Line="19" Column="46" />
+      <File FileName="PCW_20160309_teste_asp_mono/Views/Home/Index.cshtml" Line="1" Column="77" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>
