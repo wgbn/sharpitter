@@ -85,6 +85,8 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Helpers\MongoDbHelper.cs" />
+    <Compile Include="Models\Sharpp.cs" />
+    <Compile Include="Services\SharppService.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Views\Web.config" />

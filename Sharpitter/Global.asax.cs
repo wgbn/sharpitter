@@ -6,12 +6,9 @@ using System.Web;
 using System.Web.Mvc;
 using System.Web.Routing;
 
-namespace Sharpitter
-{
-	public class MvcApplication : System.Web.HttpApplication
-	{
-		public static void RegisterRoutes (RouteCollection routes)
-		{
+namespace Sharpitter {
+	public class MvcApplication : System.Web.HttpApplication {
+		public static void RegisterRoutes (RouteCollection routes) {
 			routes.IgnoreRoute ("{resource}.axd/{*pathInfo}");
 
 			routes.MapRoute (
@@ -22,13 +19,11 @@ namespace Sharpitter
 
 		}
 
-		public static void RegisterGlobalFilters (GlobalFilterCollection filters)
-		{
+		public static void RegisterGlobalFilters (GlobalFilterCollection filters) {
 			filters.Add (new HandleErrorAttribute ());
 		}
 
-		protected void Application_Start ()
-		{
+		protected void Application_Start () {
 			AreaRegistration.RegisterAllAreas ();
 			RegisterGlobalFilters (GlobalFilters.Filters);
 			RegisterRoutes (RouteTable.Routes);
