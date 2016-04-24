@@ -78,6 +78,8 @@
     <Folder Include="Scripts\" />
     <Folder Include="Helpers\" />
     <Folder Include="Services\" />
+    <Folder Include="Filters\" />
+    <Folder Include="Enums\" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Controllers\HomeController.cs" />
@@ -87,6 +89,15 @@
     <Compile Include="Helpers\MongoDbHelper.cs" />
     <Compile Include="Models\Sharpp.cs" />
     <Compile Include="Services\SharppService.cs" />
+    <Compile Include="Models\Usuario.cs" />
+    <Compile Include="Services\UsuarioService.cs" />
+    <Compile Include="Controllers\UsuarioController.cs" />
+    <Compile Include="Models\IModel.cs" />
+    <Compile Include="Services\SessionService.cs" />
+    <Compile Include="Controllers\BaseController.cs" />
+    <Compile Include="Filters\AuthFilter.cs" />
+    <Compile Include="Enums\Permissoes.cs" />
+    <Compile Include="Helpers\CriptoHelper.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Views\Web.config" />
@@ -120,6 +131,9 @@
     <Content Include="Content\styles\flex.min.css" />
     <Content Include="Content\styles\mixins.min.css" />
     <Content Include="Content\styles\style.min.css" />
+    <Content Include="Scripts\sharpitter.js" />
+    <Content Include="Views\Home\Login.cshtml" />
+    <Content Include="Views\Home\CriarUsuario.cshtml" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <ProjectExtensions>

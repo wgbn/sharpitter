@@ -4,15 +4,45 @@
 
 <ul class="list-group">
     <li class="list-group-item active postar">
-        <div class="postar-form">
-            <img src="http://www.avatarpro.biz/avatar?s=100">
-            <textarea class="postar-texto" maxlength="160"></textarea>
-        </div>
-        <div class="postar-button">
-            <button class="btn btn-primary">postar</button>
-        </div>
+    	<form action="Home/Sharpp" method="post">
+
+	        <div class="postar-form">
+	            <img src="http://www.avatarpro.biz/avatar?s=100">
+	            <textarea class="postar-texto" name="Texto" placeholder="O que está acontecendo?"></textarea>
+	        </div>
+	        <div class="postar-button">
+	            <input type="submit" value="postar" class="btn btn-primary"/>
+	        </div>
+
+        </form>
+
     </li>
-    <li class="list-group-item sharpp-item">
+
+    @if (ViewBag.sharpps.Count > 0){
+
+    	foreach(var sh in ViewBag.sharpps){
+
+		    <li class="list-group-item sharpp-item">
+		        <img src="http://www.avatarpro.biz/avatar?s=100" class="sharpp-avatar">
+		        <div class="sharpp-dados">
+		            <strong class="sharpp-nome">Walter Gandarella</strong> <span class="sharpp-apelido">@@@sh.Autor</span> <span class="sharpp-tempo">- 2h</span>
+		            <p class="sharpp-texto">
+		                @sh.Texto
+		            </p>
+		        </div>
+		    </li>
+
+	    }
+
+    } else {
+
+    	<li class="list-group-item">
+    		<em>Nenhum Sharpp encontrado.</em>
+    	</li>
+
+    }
+
+    <!--li class="list-group-item sharpp-item">
         <img src="http://www.avatarpro.biz/avatar?s=100" class="sharpp-avatar">
         <div class="sharpp-dados">
             <strong class="sharpp-nome">Walter Gandarella</strong> <span class="sharpp-apelido">@@wgbn</span> <span class="sharpp-tempo">- 2h</span>
@@ -29,20 +59,15 @@
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum deserunt eaque ipsa laboriosam quasi recusandae reiciendis temporibus, voluptatem? Accusamus aliquid commodi consequatur doloremque expedita nisi quidem rerum sapiente ullam vero!
             </p>
         </div>
-    </li>
-    <li class="list-group-item sharpp-item">
-        <img src="http://www.avatarpro.biz/avatar?s=100" class="sharpp-avatar">
-        <div class="sharpp-dados">
-            <strong class="sharpp-nome">Walter Gandarella</strong> <span class="sharpp-apelido">@@wgbn</span> <span class="sharpp-tempo">- 2h</span>
-            <p class="sharpp-texto">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum deserunt eaque ipsa laboriosam quasi recusandae reiciendis temporibus, voluptatem? Accusamus aliquid commodi consequatur doloremque expedita nisi quidem rerum sapiente ullam vero!
-            </p>
-        </div>
-    </li>
+    </li-->
 </ul>
 
 <script>
     $(document).ready(function(){
+
+    	$('.postar-texto').focus(function(){
+    		$()
+    	});
 
         $('.postar-texto').keyup(function(){
             limita($(this));

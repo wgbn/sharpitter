@@ -5,7 +5,7 @@ body {
 }
 
 .barra-topo {
-    background-color: #5da4f4; //#3BAFDA;
+    background-color: #fff; //#5da4f4; //#3BAFDA;
     border-radius: 0;
     @include box-shadow(0, 2px, 3px, rgba(0,0,0,.2));
 
@@ -128,7 +128,7 @@ body {
                 text-align: right;
             }
         }
-        & .postar:hover {
+        & .postar-hover {
             & .postar-form {
                 & textarea {
                     height: 70px;
@@ -144,8 +144,8 @@ body {
             @extend %flex-center-top;
 
             & .sharpp-avatar {
-                width: 72px;
-                height: 72px;
+                width: 48px;
+                height: 48px;
                 margin-right: .5em;
                 display: inline-block;
 
