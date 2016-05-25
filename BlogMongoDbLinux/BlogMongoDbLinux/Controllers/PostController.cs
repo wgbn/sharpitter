@@ -15,7 +15,6 @@ namespace BlogMongoDbLinux.Controllers {
 
 		public ActionResult Index () {
 			var posts = postService.GetPosts ();
-			ViewData ["TotalPosts"] = posts != null ? posts.Count : 0;
 			return posts != null ? View (posts) : View ();
 		}
 

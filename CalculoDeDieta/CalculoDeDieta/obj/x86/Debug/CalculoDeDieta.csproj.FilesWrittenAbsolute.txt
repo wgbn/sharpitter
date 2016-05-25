@@ -1,0 +1,5 @@
+/media/walter/ARQUIVOS/workspace/dotnet/CalculoDeDieta/CalculoDeDieta/obj/x86/Debug/.NETFramework,Version=v4.5.AssemblyAttribute.cs
+/media/walter/ARQUIVOS/workspace/dotnet/CalculoDeDieta/CalculoDeDieta/bin/Debug/CalculoDeDieta.exe.mdb
+/media/walter/ARQUIVOS/workspace/dotnet/CalculoDeDieta/CalculoDeDieta/bin/Debug/CalculoDeDieta.exe
+/media/walter/ARQUIVOS/workspace/dotnet/CalculoDeDieta/CalculoDeDieta/obj/x86/Debug/CalculoDeDieta.exe
+/media/walter/ARQUIVOS/workspace/dotnet/CalculoDeDieta/CalculoDeDieta/obj/x86/Debug/CalculoDeDieta.exe.mdb
