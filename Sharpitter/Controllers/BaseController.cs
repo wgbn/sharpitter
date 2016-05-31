@@ -9,7 +9,7 @@ using Sharpitter.Filters;
 namespace Sharpitter.Controllers {
 
 	[AuthFilter]
-	public class BaseController : Controller {
+	public class BaseController : AsyncController {
 
     }
 

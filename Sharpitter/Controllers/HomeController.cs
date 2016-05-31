@@ -6,6 +6,7 @@ using System.Web.Mvc;
 using System.Web.Mvc.Ajax;
 using Sharpitter.Services;
 using Sharpitter.Models;
+using System.Threading.Tasks;
 
 namespace Sharpitter.Controllers {
 	
@@ -16,26 +17,30 @@ namespace Sharpitter.Controllers {
 
 		//private List<Sharpp> _sharpps;
 
-		/*public void IndexAsync(){
-			AsyncManager.OutstandingOperations.Increment();
-			var sharpps = sharppService.GetRecentes();
-			//this._sharpps = sharpps.Result;
-			AsyncManager.Parameters["sharpps"] = sharpps.Result;
+		public void IndexAsync(){
+			AsyncManager.OutstandingOperations.Increment(1);
+			var sharpps = sharppService.GetRecentesAsync();
+			//var list = sharpps.Result;
+			//ViewBag.sharpps = sharpps.Result;
+			AsyncManager.Parameters["sharpps"] = sharpps;
 			AsyncManager.OutstandingOperations.Decrement();
+
+			//return View ();
 		}
 		
-		public ActionResult IndexCompleted(List<Sharpp> _sharpps) {
-			ViewBag.sharpps = _sharpps;
+		public ActionResult IndexCompleted(List<Sharpp> sharpps) {
+			System.Console.WriteLine ("IndexCompleted");
+			TempData ["sharpps"] = sharpps;
 			return View ();
-		}*/
+		}
 
-		public ActionResult Index(){
+		/*public ActionResult Index(){
 			System.Console.WriteLine("HomeController::Index");
 			ViewBag.sharpps = sharppService.GetRecentes();
 			var usuario = SessionService.Instance.GetUsuarioLogado ();
 			ViewBag.Usuario = usuario;
 			return View ();
-		}
+		}*/
 
 		public ActionResult Perfil(string _username){
 			//Usuario usuario = usuarioService.GetByUsername ("wgbn");

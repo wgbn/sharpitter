@@ -28,14 +28,14 @@ namespace Sharpitter.Services {
 			return true;
 		}
 
-		/*public async Task<List<Sharpp>> GetRecentesAsync(){
+		public async Task<List<Sharpp>> GetRecentesAsync(){
 			var colecao = _sharpps.db.GetCollection<Sharpp> ("sharpps");
 			var filtro = new BsonDocument ();
 			var ordem = Builders<Sharpp>.Sort.Descending("Registro");
 			var result = await colecao.Find(filtro).Sort(ordem).ToListAsync();
 
 			return result;
-		}*/
+		}
 
 		public List<Sharpp> GetRecentes(){
 			var colecao = _sharpps.collection;

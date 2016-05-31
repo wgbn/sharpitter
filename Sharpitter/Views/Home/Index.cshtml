@@ -18,9 +18,9 @@
 
     </li>
 
-    @if (ViewBag.sharpps.Count > 0){
+    @if (TempData["sharpps"].Count > 0){
 
-    	foreach(var sh in ViewBag.sharpps){
+    	foreach(var sh in TempData["sharpps"]){
 
 		    <li class="list-group-item sharpp-item">
 		        <img src="http://www.avatarpro.biz/avatar?s=100" class="sharpp-avatar">
